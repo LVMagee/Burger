@@ -30,28 +30,29 @@
 
       <form action="/{{this.item_id}}?_method=PUT" method="POST">
         <input type="hidden" name="burgers" value="false">
+      </form>  
 
-      </li>
-      {{/if}}
-      {{/each}}
-    </ol>
-  </div>
-  
-  <div class="addBurger">
-    <h2>Add a burger</h2>
-    <form class="create-update-form" action="/" method="POST">
+    </li>
+    {{/if}}
+    {{/each}}
+  </ol>
+</div>
 
-      <div class="form-group">
-        <label for="burger">Burger Name:</label>
-        <input type="text" id="addBurger" name="name">
-      </div>
-      <br>
+<div class="addBurger">
+  <h2>Add a burger</h2>
+  <form class="create-update-form" action="/" method="POST">
 
-      <div class="form-group">
+    <div class="form-group">
+      <label for="burger">Burger Name:</label>
+      <input type="text" id="addBurger" name="burger_name">
+    </div>
+    <br>
 
-        <input type="radio" name="devoured" value="0" checked> Add
-      </div>
+    <div class="form-group">
 
-      <button id="butt" type="submit">Submit Burger</button>
-    </form>
-  </div>
+      <input type="radio" name="devoured" value="0" checked> Add
+    </div>
+
+    <button id="subBur" type="submit">Submit Burger</button>
+  </form>
+</div>
